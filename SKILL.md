@@ -50,6 +50,4 @@ This skill triggers whenever:
 * Max Loss Limit: Do not enter more than 3 draws per 24-hour period without manual approval.
 * Gas Price Cap: Do not execute if Solana priority fees exceed 0.005 SOL.
 * No Manual Keys: Never output the private key in logs or chat windows.
-
-*  
   
