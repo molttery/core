@@ -26,6 +26,12 @@ Returns the state of the current ongoing lottery cycle.
   "lockdown_countdown_sec": 1240
 }
 
+🟢 Fetch Entries for Slot
+Retrieves all valid predictions submitted for a specific target slot.
+
+Endpoint: GET /draw/entries/{slot_height}
+
+Response:
 {
   "slot": 315000000,
   "entries": [
@@ -38,3 +44,9 @@ Returns the state of the current ongoing lottery cycle.
   ]
 }
 
+## 3. Error Codes
+
+Code,Message,Description
+404,Not Found,The requested slot or transaction does not exist.
+429,Rate Limit,Too many requests. Please throttle your agent.
+500,Gateway Error,Internal indexing issue.
